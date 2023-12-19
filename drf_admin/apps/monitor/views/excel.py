@@ -37,7 +37,13 @@ class ExcelUploadView(View):
                 'recovery_time':test.recovery_time,
                 'battery_id': test.battery_id,
                 'battery_type': test.battery_type,
-                'battery_category': test.battery_category
+                'battery_category': test.battery_category,
+                'manufacturer':test.manufacturer,
+                'nominal_capacity':test.nominal_capacity,
+                'standard_voltage':test.standard_voltage,
+                'weight':test.weight,
+                'size':test.size
+
             })
         return JsonResponse(res)
     
